@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111070DD1DB81ECA00F0F536 /* Room+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111070D51DB81ECA00F0F536 /* Room+CoreDataProperties.swift */; };
+		111070DE1DB81ECA00F0F536 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111070D61DB81ECA00F0F536 /* Room.swift */; };
+		111070DF1DB81ECA00F0F536 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111070D71DB81ECA00F0F536 /* Item+CoreDataProperties.swift */; };
+		111070E01DB81ECA00F0F536 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111070D81DB81ECA00F0F536 /* Item.swift */; };
+		111070E11DB81ECA00F0F536 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111070D91DB81ECA00F0F536 /* Category+CoreDataProperties.swift */; };
+		111070E21DB81ECA00F0F536 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111070DA1DB81ECA00F0F536 /* Category.swift */; };
+		111070E31DB81ECA00F0F536 /* Property+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111070DB1DB81ECA00F0F536 /* Property+CoreDataProperties.swift */; };
+		111070E41DB81ECA00F0F536 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111070DC1DB81ECA00F0F536 /* Property.swift */; };
 		7319C5D81DA54B2B00B5B455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7319C5D71DA54B2B00B5B455 /* AppDelegate.swift */; };
 		7319C5DA1DA54B2B00B5B455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7319C5D91DA54B2B00B5B455 /* ViewController.swift */; };
 		7319C5DD1DA54B2C00B5B455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7319C5DB1DA54B2C00B5B455 /* Main.storyboard */; };
@@ -24,6 +32,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		111070D51DB81ECA00F0F536 /* Room+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Room+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111070D61DB81ECA00F0F536 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		111070D71DB81ECA00F0F536 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111070D81DB81ECA00F0F536 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		111070D91DB81ECA00F0F536 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111070DA1DB81ECA00F0F536 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		111070DB1DB81ECA00F0F536 /* Property+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Property+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		111070DC1DB81ECA00F0F536 /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		7319C5D41DA54B2B00B5B455 /* HomeInventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeInventory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7319C5D71DA54B2B00B5B455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7319C5D91DA54B2B00B5B455 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +88,14 @@
 		7319C5D61DA54B2B00B5B455 /* HomeInventory */ = {
 			isa = PBXGroup;
 			children = (
+				111070D51DB81ECA00F0F536 /* Room+CoreDataProperties.swift */,
+				111070D61DB81ECA00F0F536 /* Room.swift */,
+				111070D71DB81ECA00F0F536 /* Item+CoreDataProperties.swift */,
+				111070D81DB81ECA00F0F536 /* Item.swift */,
+				111070D91DB81ECA00F0F536 /* Category+CoreDataProperties.swift */,
+				111070DA1DB81ECA00F0F536 /* Category.swift */,
+				111070DB1DB81ECA00F0F536 /* Property+CoreDataProperties.swift */,
+				111070DC1DB81ECA00F0F536 /* Property.swift */,
 				7319C5D71DA54B2B00B5B455 /* AppDelegate.swift */,
 				7319C5D91DA54B2B00B5B455 /* ViewController.swift */,
 				7319C5DB1DA54B2C00B5B455 /* Main.storyboard */,
@@ -162,17 +186,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				111070DF1DB81ECA00F0F536 /* Item+CoreDataProperties.swift in Sources */,
 				73E4A5661DB6B81D0065C00E /* CategoryTableViewController.swift in Sources */,
+				111070E41DB81ECA00F0F536 /* Property.swift in Sources */,
 				73E4A5621DB6B7E50065C00E /* RoomTableViewController.swift in Sources */,
 				73E4A5601DB6B75E0065C00E /* PropertyTableViewController.swift in Sources */,
 				7319C5E01DA54B2C00B5B455 /* HomeInventory.xcdatamodeld in Sources */,
+				111070DD1DB81ECA00F0F536 /* Room+CoreDataProperties.swift in Sources */,
 				7319C5DA1DA54B2B00B5B455 /* ViewController.swift in Sources */,
+				111070DE1DB81ECA00F0F536 /* Room.swift in Sources */,
 				73E4A56C1DB6B8660065C00E /* AddItemViewController.swift in Sources */,
 				73E4A5641DB6B7F70065C00E /* ItemTableViewController.swift in Sources */,
+				111070E01DB81ECA00F0F536 /* Item.swift in Sources */,
+				111070E21DB81ECA00F0F536 /* Category.swift in Sources */,
 				73E4A56A1DB6B84F0065C00E /* AddRoomViewController.swift in Sources */,
 				7319C5D81DA54B2B00B5B455 /* AppDelegate.swift in Sources */,
+				111070E31DB81ECA00F0F536 /* Property+CoreDataProperties.swift in Sources */,
 				73E4A5681DB6B8360065C00E /* AddPropertyViewController.swift in Sources */,
 				73E4A56E1DB6B87A0065C00E /* AddCategoryViewController.swift in Sources */,
+				111070E11DB81ECA00F0F536 /* Category+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
