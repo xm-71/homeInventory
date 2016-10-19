@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "11FF75551DAC13DB00B9D880"
-               BuildableName = "homeInventory.app"
-               BlueprintName = "homeInventory"
-               ReferencedContainer = "container:homeInventory.xcodeproj">
+               BlueprintIdentifier = "7319C5D31DA54B2B00B5B455"
+               BuildableName = "HomeInventory.app"
+               BlueprintName = "HomeInventory"
+               ReferencedContainer = "container:HomeInventory.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "11FF75551DAC13DB00B9D880"
-            BuildableName = "homeInventory.app"
-            BlueprintName = "homeInventory"
-            ReferencedContainer = "container:homeInventory.xcodeproj">
+            BlueprintIdentifier = "7319C5D31DA54B2B00B5B455"
+            BuildableName = "HomeInventory.app"
+            BlueprintName = "HomeInventory"
+            ReferencedContainer = "container:HomeInventory.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "11FF75551DAC13DB00B9D880"
-            BuildableName = "homeInventory.app"
-            BlueprintName = "homeInventory"
-            ReferencedContainer = "container:homeInventory.xcodeproj">
+            BlueprintIdentifier = "7319C5D31DA54B2B00B5B455"
+            BuildableName = "HomeInventory.app"
+            BlueprintName = "HomeInventory"
+            ReferencedContainer = "container:HomeInventory.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "11FF75551DAC13DB00B9D880"
-            BuildableName = "homeInventory.app"
-            BlueprintName = "homeInventory"
-            ReferencedContainer = "container:homeInventory.xcodeproj">
+            BlueprintIdentifier = "7319C5D31DA54B2B00B5B455"
+            BuildableName = "HomeInventory.app"
+            BlueprintName = "HomeInventory"
+            ReferencedContainer = "container:HomeInventory.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

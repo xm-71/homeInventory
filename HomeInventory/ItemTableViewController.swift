@@ -1,5 +1,5 @@
 //
-//  AddRoomViewController.swift
+//  ItemTableViewController.swift
 //  HomeInventory
 //
 //  Created by Rob Elliott on 10/18/16.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-class AddRoomViewController: UIViewController {
+class ItemTableViewController: UITableViewController {
     
 }

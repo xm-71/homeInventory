@@ -7,41 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11FF755A1DAC13DB00B9D880 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF75591DAC13DB00B9D880 /* AppDelegate.swift */; };
-		11FF755F1DAC13DB00B9D880 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FF755D1DAC13DB00B9D880 /* Main.storyboard */; };
-		11FF75621DAC13DB00B9D880 /* homeInventory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11FF75601DAC13DB00B9D880 /* homeInventory.xcdatamodeld */; };
-		11FF75641DAC13DB00B9D880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FF75631DAC13DB00B9D880 /* Assets.xcassets */; };
-		11FF75671DAC13DB00B9D880 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FF75651DAC13DB00B9D880 /* LaunchScreen.storyboard */; };
-		11FF756F1DAC1AFF00B9D880 /* PropertyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF756E1DAC1AFF00B9D880 /* PropertyTableViewController.swift */; };
-		11FF75711DAC1B7100B9D880 /* RoomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF75701DAC1B7100B9D880 /* RoomTableViewController.swift */; };
-		11FF75731DAC1B8900B9D880 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF75721DAC1B8900B9D880 /* ItemViewController.swift */; };
-		11FF75751DAC1BA300B9D880 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF75741DAC1BA300B9D880 /* CategoryTableViewController.swift */; };
-		11FF75771DAC1BD300B9D880 /* AddPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF75761DAC1BD300B9D880 /* AddPropertyViewController.swift */; };
-		11FF75791DAC1BE400B9D880 /* AddRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF75781DAC1BE400B9D880 /* AddRoomViewController.swift */; };
-		11FF757B1DAC1BF900B9D880 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF757A1DAC1BF900B9D880 /* AddItemViewController.swift */; };
-		11FF757D1DAC1C0F00B9D880 /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF757C1DAC1C0F00B9D880 /* AddCategoryViewController.swift */; };
+		7319C5D81DA54B2B00B5B455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7319C5D71DA54B2B00B5B455 /* AppDelegate.swift */; };
+		7319C5DA1DA54B2B00B5B455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7319C5D91DA54B2B00B5B455 /* ViewController.swift */; };
+		7319C5DD1DA54B2C00B5B455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7319C5DB1DA54B2C00B5B455 /* Main.storyboard */; };
+		7319C5E01DA54B2C00B5B455 /* HomeInventory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7319C5DE1DA54B2C00B5B455 /* HomeInventory.xcdatamodeld */; };
+		7319C5E21DA54B2C00B5B455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7319C5E11DA54B2C00B5B455 /* Assets.xcassets */; };
+		7319C5E51DA54B2C00B5B455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7319C5E31DA54B2C00B5B455 /* LaunchScreen.storyboard */; };
+		73E4A5601DB6B75E0065C00E /* PropertyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4A55F1DB6B75E0065C00E /* PropertyTableViewController.swift */; };
+		73E4A5621DB6B7E50065C00E /* RoomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4A5611DB6B7E50065C00E /* RoomTableViewController.swift */; };
+		73E4A5641DB6B7F70065C00E /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4A5631DB6B7F70065C00E /* ItemTableViewController.swift */; };
+		73E4A5661DB6B81D0065C00E /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4A5651DB6B81D0065C00E /* CategoryTableViewController.swift */; };
+		73E4A5681DB6B8360065C00E /* AddPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4A5671DB6B8360065C00E /* AddPropertyViewController.swift */; };
+		73E4A56A1DB6B84F0065C00E /* AddRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4A5691DB6B84F0065C00E /* AddRoomViewController.swift */; };
+		73E4A56C1DB6B8660065C00E /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4A56B1DB6B8660065C00E /* AddItemViewController.swift */; };
+		73E4A56E1DB6B87A0065C00E /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4A56D1DB6B87A0065C00E /* AddCategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		11FF75561DAC13DB00B9D880 /* homeInventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homeInventory.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		11FF75591DAC13DB00B9D880 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11FF755E1DAC13DB00B9D880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		11FF75611DAC13DB00B9D880 /* homeInventory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = homeInventory.xcdatamodel; sourceTree = "<group>"; };
-		11FF75631DAC13DB00B9D880 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		11FF75661DAC13DB00B9D880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		11FF75681DAC13DB00B9D880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11FF756E1DAC1AFF00B9D880 /* PropertyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTableViewController.swift; sourceTree = "<group>"; };
-		11FF75701DAC1B7100B9D880 /* RoomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomTableViewController.swift; sourceTree = "<group>"; };
-		11FF75721DAC1B8900B9D880 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
-		11FF75741DAC1BA300B9D880 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
-		11FF75761DAC1BD300B9D880 /* AddPropertyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPropertyViewController.swift; sourceTree = "<group>"; };
-		11FF75781DAC1BE400B9D880 /* AddRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRoomViewController.swift; sourceTree = "<group>"; };
-		11FF757A1DAC1BF900B9D880 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
-		11FF757C1DAC1C0F00B9D880 /* AddCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCategoryViewController.swift; sourceTree = "<group>"; };
+		7319C5D41DA54B2B00B5B455 /* HomeInventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeInventory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7319C5D71DA54B2B00B5B455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7319C5D91DA54B2B00B5B455 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7319C5DC1DA54B2C00B5B455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7319C5DF1DA54B2C00B5B455 /* HomeInventory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeInventory.xcdatamodel; sourceTree = "<group>"; };
+		7319C5E11DA54B2C00B5B455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7319C5E41DA54B2C00B5B455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7319C5E61DA54B2C00B5B455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73E4A55F1DB6B75E0065C00E /* PropertyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTableViewController.swift; sourceTree = "<group>"; };
+		73E4A5611DB6B7E50065C00E /* RoomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomTableViewController.swift; sourceTree = "<group>"; };
+		73E4A5631DB6B7F70065C00E /* ItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
+		73E4A5651DB6B81D0065C00E /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		73E4A5671DB6B8360065C00E /* AddPropertyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPropertyViewController.swift; sourceTree = "<group>"; };
+		73E4A5691DB6B84F0065C00E /* AddRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRoomViewController.swift; sourceTree = "<group>"; };
+		73E4A56B1DB6B8660065C00E /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		73E4A56D1DB6B87A0065C00E /* AddCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		11FF75531DAC13DB00B9D880 /* Frameworks */ = {
+		7319C5D11DA54B2B00B5B455 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,79 +53,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		11FF754D1DAC13DB00B9D880 = {
+		7319C5CB1DA54B2B00B5B455 = {
 			isa = PBXGroup;
 			children = (
-				11FF75581DAC13DB00B9D880 /* homeInventory */,
-				11FF75571DAC13DB00B9D880 /* Products */,
+				7319C5D61DA54B2B00B5B455 /* HomeInventory */,
+				7319C5D51DA54B2B00B5B455 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		11FF75571DAC13DB00B9D880 /* Products */ = {
+		7319C5D51DA54B2B00B5B455 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11FF75561DAC13DB00B9D880 /* homeInventory.app */,
+				7319C5D41DA54B2B00B5B455 /* HomeInventory.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		11FF75581DAC13DB00B9D880 /* homeInventory */ = {
+		7319C5D61DA54B2B00B5B455 /* HomeInventory */ = {
 			isa = PBXGroup;
 			children = (
-				11FF75591DAC13DB00B9D880 /* AppDelegate.swift */,
-				11FF755D1DAC13DB00B9D880 /* Main.storyboard */,
-				11FF756E1DAC1AFF00B9D880 /* PropertyTableViewController.swift */,
-				11FF75701DAC1B7100B9D880 /* RoomTableViewController.swift */,
-				11FF75721DAC1B8900B9D880 /* ItemViewController.swift */,
-				11FF75741DAC1BA300B9D880 /* CategoryTableViewController.swift */,
-				11FF75761DAC1BD300B9D880 /* AddPropertyViewController.swift */,
-				11FF75781DAC1BE400B9D880 /* AddRoomViewController.swift */,
-				11FF757A1DAC1BF900B9D880 /* AddItemViewController.swift */,
-				11FF757C1DAC1C0F00B9D880 /* AddCategoryViewController.swift */,
-				11FF75631DAC13DB00B9D880 /* Assets.xcassets */,
-				11FF75651DAC13DB00B9D880 /* LaunchScreen.storyboard */,
-				11FF75681DAC13DB00B9D880 /* Info.plist */,
-				11FF75601DAC13DB00B9D880 /* homeInventory.xcdatamodeld */,
+				7319C5D71DA54B2B00B5B455 /* AppDelegate.swift */,
+				7319C5D91DA54B2B00B5B455 /* ViewController.swift */,
+				7319C5DB1DA54B2C00B5B455 /* Main.storyboard */,
+				73E4A55F1DB6B75E0065C00E /* PropertyTableViewController.swift */,
+				7319C5E11DA54B2C00B5B455 /* Assets.xcassets */,
+				7319C5E31DA54B2C00B5B455 /* LaunchScreen.storyboard */,
+				7319C5E61DA54B2C00B5B455 /* Info.plist */,
+				7319C5DE1DA54B2C00B5B455 /* HomeInventory.xcdatamodeld */,
+				73E4A5611DB6B7E50065C00E /* RoomTableViewController.swift */,
+				73E4A5631DB6B7F70065C00E /* ItemTableViewController.swift */,
+				73E4A5651DB6B81D0065C00E /* CategoryTableViewController.swift */,
+				73E4A5671DB6B8360065C00E /* AddPropertyViewController.swift */,
+				73E4A5691DB6B84F0065C00E /* AddRoomViewController.swift */,
+				73E4A56B1DB6B8660065C00E /* AddItemViewController.swift */,
+				73E4A56D1DB6B87A0065C00E /* AddCategoryViewController.swift */,
 			);
-			path = homeInventory;
+			path = HomeInventory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		11FF75551DAC13DB00B9D880 /* homeInventory */ = {
+		7319C5D31DA54B2B00B5B455 /* HomeInventory */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11FF756B1DAC13DB00B9D880 /* Build configuration list for PBXNativeTarget "homeInventory" */;
+			buildConfigurationList = 7319C5E91DA54B2C00B5B455 /* Build configuration list for PBXNativeTarget "HomeInventory" */;
 			buildPhases = (
-				11FF75521DAC13DB00B9D880 /* Sources */,
-				11FF75531DAC13DB00B9D880 /* Frameworks */,
-				11FF75541DAC13DB00B9D880 /* Resources */,
+				7319C5D01DA54B2B00B5B455 /* Sources */,
+				7319C5D11DA54B2B00B5B455 /* Frameworks */,
+				7319C5D21DA54B2B00B5B455 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = homeInventory;
-			productName = homeInventory;
-			productReference = 11FF75561DAC13DB00B9D880 /* homeInventory.app */;
+			name = HomeInventory;
+			productName = HomeInventory;
+			productReference = 7319C5D41DA54B2B00B5B455 /* HomeInventory.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		11FF754E1DAC13DB00B9D880 /* Project object */ = {
+		7319C5CC1DA54B2B00B5B455 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "Cannon, James Alex";
+				ORGANIZATIONNAME = "Rob Elliott";
 				TargetAttributes = {
-					11FF75551DAC13DB00B9D880 = {
+					7319C5D31DA54B2B00B5B455 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 11FF75511DAC13DB00B9D880 /* Build configuration list for PBXProject "homeInventory" */;
+			buildConfigurationList = 7319C5CF1DA54B2B00B5B455 /* Build configuration list for PBXProject "HomeInventory" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -131,62 +134,63 @@
 				en,
 				Base,
 			);
-			mainGroup = 11FF754D1DAC13DB00B9D880;
-			productRefGroup = 11FF75571DAC13DB00B9D880 /* Products */;
+			mainGroup = 7319C5CB1DA54B2B00B5B455;
+			productRefGroup = 7319C5D51DA54B2B00B5B455 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11FF75551DAC13DB00B9D880 /* homeInventory */,
+				7319C5D31DA54B2B00B5B455 /* HomeInventory */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		11FF75541DAC13DB00B9D880 /* Resources */ = {
+		7319C5D21DA54B2B00B5B455 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11FF75671DAC13DB00B9D880 /* LaunchScreen.storyboard in Resources */,
-				11FF75641DAC13DB00B9D880 /* Assets.xcassets in Resources */,
-				11FF755F1DAC13DB00B9D880 /* Main.storyboard in Resources */,
+				7319C5E51DA54B2C00B5B455 /* LaunchScreen.storyboard in Resources */,
+				7319C5E21DA54B2C00B5B455 /* Assets.xcassets in Resources */,
+				7319C5DD1DA54B2C00B5B455 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		11FF75521DAC13DB00B9D880 /* Sources */ = {
+		7319C5D01DA54B2B00B5B455 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11FF75711DAC1B7100B9D880 /* RoomTableViewController.swift in Sources */,
-				11FF755A1DAC13DB00B9D880 /* AppDelegate.swift in Sources */,
-				11FF75731DAC1B8900B9D880 /* ItemViewController.swift in Sources */,
-				11FF75791DAC1BE400B9D880 /* AddRoomViewController.swift in Sources */,
-				11FF756F1DAC1AFF00B9D880 /* PropertyTableViewController.swift in Sources */,
-				11FF757B1DAC1BF900B9D880 /* AddItemViewController.swift in Sources */,
-				11FF757D1DAC1C0F00B9D880 /* AddCategoryViewController.swift in Sources */,
-				11FF75621DAC13DB00B9D880 /* homeInventory.xcdatamodeld in Sources */,
-				11FF75771DAC1BD300B9D880 /* AddPropertyViewController.swift in Sources */,
-				11FF75751DAC1BA300B9D880 /* CategoryTableViewController.swift in Sources */,
+				73E4A5661DB6B81D0065C00E /* CategoryTableViewController.swift in Sources */,
+				73E4A5621DB6B7E50065C00E /* RoomTableViewController.swift in Sources */,
+				73E4A5601DB6B75E0065C00E /* PropertyTableViewController.swift in Sources */,
+				7319C5E01DA54B2C00B5B455 /* HomeInventory.xcdatamodeld in Sources */,
+				7319C5DA1DA54B2B00B5B455 /* ViewController.swift in Sources */,
+				73E4A56C1DB6B8660065C00E /* AddItemViewController.swift in Sources */,
+				73E4A5641DB6B7F70065C00E /* ItemTableViewController.swift in Sources */,
+				73E4A56A1DB6B84F0065C00E /* AddRoomViewController.swift in Sources */,
+				7319C5D81DA54B2B00B5B455 /* AppDelegate.swift in Sources */,
+				73E4A5681DB6B8360065C00E /* AddPropertyViewController.swift in Sources */,
+				73E4A56E1DB6B87A0065C00E /* AddCategoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		11FF755D1DAC13DB00B9D880 /* Main.storyboard */ = {
+		7319C5DB1DA54B2C00B5B455 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				11FF755E1DAC13DB00B9D880 /* Base */,
+				7319C5DC1DA54B2C00B5B455 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		11FF75651DAC13DB00B9D880 /* LaunchScreen.storyboard */ = {
+		7319C5E31DA54B2C00B5B455 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				11FF75661DAC13DB00B9D880 /* Base */,
+				7319C5E41DA54B2C00B5B455 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -194,7 +198,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		11FF75691DAC13DB00B9D880 /* Debug */ = {
+		7319C5E71DA54B2C00B5B455 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -239,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		11FF756A1DAC13DB00B9D880 /* Release */ = {
+		7319C5E81DA54B2C00B5B455 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -277,24 +281,24 @@
 			};
 			name = Release;
 		};
-		11FF756C1DAC13DB00B9D880 /* Debug */ = {
+		7319C5EA1DA54B2C00B5B455 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = homeInventory/Info.plist;
+				INFOPLIST_FILE = HomeInventory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = iupui.homeInventory;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.iupui.elliott.HomeInventory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		11FF756D1DAC13DB00B9D880 /* Release */ = {
+		7319C5EB1DA54B2C00B5B455 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = homeInventory/Info.plist;
+				INFOPLIST_FILE = HomeInventory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = iupui.homeInventory;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.iupui.elliott.HomeInventory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -302,37 +306,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11FF75511DAC13DB00B9D880 /* Build configuration list for PBXProject "homeInventory" */ = {
+		7319C5CF1DA54B2B00B5B455 /* Build configuration list for PBXProject "HomeInventory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11FF75691DAC13DB00B9D880 /* Debug */,
-				11FF756A1DAC13DB00B9D880 /* Release */,
+				7319C5E71DA54B2C00B5B455 /* Debug */,
+				7319C5E81DA54B2C00B5B455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11FF756B1DAC13DB00B9D880 /* Build configuration list for PBXNativeTarget "homeInventory" */ = {
+		7319C5E91DA54B2C00B5B455 /* Build configuration list for PBXNativeTarget "HomeInventory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11FF756C1DAC13DB00B9D880 /* Debug */,
-				11FF756D1DAC13DB00B9D880 /* Release */,
+				7319C5EA1DA54B2C00B5B455 /* Debug */,
+				7319C5EB1DA54B2C00B5B455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		11FF75601DAC13DB00B9D880 /* homeInventory.xcdatamodeld */ = {
+		7319C5DE1DA54B2C00B5B455 /* HomeInventory.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				11FF75611DAC13DB00B9D880 /* homeInventory.xcdatamodel */,
+				7319C5DF1DA54B2C00B5B455 /* HomeInventory.xcdatamodel */,
 			);
-			currentVersion = 11FF75611DAC13DB00B9D880 /* homeInventory.xcdatamodel */;
-			path = homeInventory.xcdatamodeld;
+			currentVersion = 7319C5DF1DA54B2C00B5B455 /* HomeInventory.xcdatamodel */;
+			path = HomeInventory.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 11FF754E1DAC13DB00B9D880 /* Project object */;
+	rootObject = 7319C5CC1DA54B2B00B5B455 /* Project object */;
 }

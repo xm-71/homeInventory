@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  homeInventory
+//  HomeInventory
 //
-//  Created by Cannon, James Alex on 10/10/16.
-//  Copyright © 2016 Cannon, James Alex. All rights reserved.
+//  Created by Rob Elliott on 10/5/16.
+//  Copyright © 2016 Rob Elliott. All rights reserved.
 //
 
 import UIKit
@@ -47,14 +47,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Core Data stack
 
     lazy var applicationDocumentsDirectory: NSURL = {
-        // The directory the application uses to store the Core Data store file. This code uses a directory named "iupui.homeInventory" in the application's documents Application Support directory.
+        // The directory the application uses to store the Core Data store file. This code uses a directory named "edu.iupui.elliott.HomeInventory" in the application's documents Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
         return urls[urls.count-1]
     }()
 
     lazy var managedObjectModel: NSManagedObjectModel = {
         // The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.
-        let modelURL = NSBundle.mainBundle().URLForResource("homeInventory", withExtension: "momd")!
+        let modelURL = NSBundle.mainBundle().URLForResource("HomeInventory", withExtension: "momd")!
         return NSManagedObjectModel(contentsOfURL: modelURL)!
     }()
 

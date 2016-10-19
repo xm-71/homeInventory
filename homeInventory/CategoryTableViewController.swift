@@ -1,9 +1,13 @@
 //
 //  CategoryTableViewController.swift
-//  homeInventory
+//  HomeInventory
 //
-//  Created by Cannon, James Alex on 10/10/16.
-//  Copyright © 2016 Cannon, James Alex. All rights reserved.
+//  Created by Rob Elliott on 10/18/16.
+//  Copyright © 2016 Rob Elliott. All rights reserved.
 //
 
 import UIKit
+
+class CategoryTableViewController: UITableViewController {
+    
+}
