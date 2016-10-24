@@ -10,4 +10,6 @@ import UIKit
 
 class AddRoomViewController: UIViewController {
     
+    @IBOutlet weak var roomName: UITextField!
+    @IBOutlet weak var floor: UITextField!
 }
