@@ -13,10 +13,34 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    func isFirstLaunch() -> Bool
+    {
+        if(NSUserDefaults.standardUserDefaults().boolForKey("HasLaunchedOnce"))
+        {
+            // App has already launched on this device
+            return false
+        }
+        else
+        {
+            // This is the first launch ever
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "HasLaunchedOnce")
+            NSUserDefaults.standardUserDefaults().synchronize()
+            return true
+        }
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if isFirstLaunch(){
+        Property.addProperty("t")
+            Property.addProperty("e")
+            Property.addProperty("s")
+            Property.addProperty("t")
+            Property.addProperty("s")
+            print("added items to core data")
+        }
         return true
     }
 

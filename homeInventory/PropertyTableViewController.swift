@@ -10,4 +10,25 @@ import UIKit
 
 class PropertyTableViewController: UITableViewController {
     
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return Property.getAllProperties().count
+        
+        
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+
+        
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("propertyCell", forIndexPath: indexPath)
+        
+        let thisProperty = Property.getAllProperties()[indexPath.row] as! Property
+        
+        cell.textLabel?.text = thisProperty.property_name
+        
+        return cell
+    }
+    
 }
