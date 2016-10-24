@@ -3,13 +3,11 @@
     <entity name="Category" representedClassName=".Category" syncable="YES">
         <attribute name="catergory_name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="created_date" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="updated_date" optional="YES" attributeType="Date" syncable="YES"/>
         <relationship name="item" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="category" inverseEntity="Item" syncable="YES"/>
     </entity>
     <entity name="Item" representedClassName=".Item" syncable="YES">
         <attribute name="created_date" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="item_image" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="item_name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="purchase_date" optional="YES" attributeType="Date" syncable="YES"/>
@@ -23,7 +21,6 @@
         <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="created_date" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="postal_code" optional="YES" attributeType="String" syncable="YES"/>
@@ -36,16 +33,15 @@
     <entity name="Room" representedClassName=".Room" syncable="YES">
         <attribute name="created_date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="floor" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="room_name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="updated_date" optional="YES" attributeType="Date" syncable="YES"/>
         <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="room" inverseEntity="Item" syncable="YES"/>
         <relationship name="property" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Property" inverseName="room" inverseEntity="Property" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Category" positionX="-36" positionY="72" width="128" height="120"/>
-        <element name="Item" positionX="-54" positionY="18" width="128" height="195"/>
-        <element name="Property" positionX="-18" positionY="81" width="128" height="225"/>
-        <element name="Room" positionX="-63" positionY="-18" width="128" height="150"/>
+        <element name="Category" positionX="-36" positionY="72" width="128" height="105"/>
+        <element name="Item" positionX="-54" positionY="18" width="128" height="180"/>
+        <element name="Property" positionX="-18" positionY="81" width="128" height="210"/>
+        <element name="Room" positionX="-63" positionY="-18" width="128" height="135"/>
     </elements>
 </model>

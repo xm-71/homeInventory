@@ -2,7 +2,7 @@
 //  Room+CoreDataProperties.swift
 //  HomeInventory
 //
-//  Created by Cannon, James Alex on 10/19/16.
+//  Created by Cannon, James Alex on 10/24/16.
 //  Copyright © 2016 Rob Elliott. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -14,11 +14,11 @@ import CoreData
 
 extension Room {
 
-    @NSManaged var room_name: String?
+    @NSManaged var created_date: NSDate?
     @NSManaged var floor: String?
-    @NSManaged var created_date: NSTimeInterval
-    @NSManaged var updated_date: NSTimeInterval
+    @NSManaged var room_name: String?
+    @NSManaged var updated_date: NSDate?
     @NSManaged var items: NSSet?
-    @NSManaged var category: NSSet?
+    @NSManaged var property: Property?
 
 }
