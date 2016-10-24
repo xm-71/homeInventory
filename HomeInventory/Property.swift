@@ -38,8 +38,6 @@ let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             print("Could not save new property: \(error), \(error.userInfo)")
         
         }
-
-    
 }
     
     static func getAllProperties() -> [NSManagedObject] {
