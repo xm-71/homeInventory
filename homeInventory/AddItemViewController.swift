@@ -10,8 +10,8 @@ import UIKit
 
 class AddItemViewController: UIViewController {
     
-    @IBOutlet weak var itemName: UITextField!
-    @IBOutlet weak var serialNumber: UITextField!
-    @IBOutlet weak var purchasePrice: UITextField!
-    @IBOutlet weak var purchaseDate: UITextField!
+    @IBOutlet weak var txtItemName: UITextField!
+    @IBOutlet weak var txtSerialNumber: UITextField!
+    @IBOutlet weak var txtPurchasePrice: UITextField!
+    @IBOutlet weak var txtPurchaseDate: UITextField!
 }
