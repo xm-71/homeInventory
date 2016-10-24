@@ -21,10 +21,6 @@ extension Item {
     @NSManaged var item_image: NSTimeInterval
     @NSManaged var created_date: NSTimeInterval
     @NSManaged var updated_date: NSTimeInterval
-    @NSManaged var attribute: UNKNOWN_TYPE
-    @NSManaged var attribute1: UNKNOWN_TYPE
-    @NSManaged var attribute2: UNKNOWN_TYPE
-    @NSManaged var attribute3: UNKNOWN_TYPE
     @NSManaged var room: Room?
 
 }

@@ -8,10 +8,6 @@
         <relationship name="item" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="category" inverseEntity="Item" syncable="YES"/>
     </entity>
     <entity name="Item" representedClassName=".Item" syncable="YES">
-        <attribute name="attribute" optional="YES" syncable="YES"/>
-        <attribute name="attribute1" optional="YES" syncable="YES"/>
-        <attribute name="attribute2" optional="YES" syncable="YES"/>
-        <attribute name="attribute3" optional="YES" syncable="YES"/>
         <attribute name="created_date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="item_image" optional="YES" attributeType="Date" syncable="YES"/>
@@ -48,7 +44,7 @@
     </entity>
     <elements>
         <element name="Category" positionX="-36" positionY="72" width="128" height="120"/>
-        <element name="Item" positionX="-54" positionY="18" width="128" height="255"/>
+        <element name="Item" positionX="-54" positionY="18" width="128" height="195"/>
         <element name="Property" positionX="-18" positionY="81" width="128" height="225"/>
         <element name="Room" positionX="-63" positionY="-18" width="128" height="150"/>
     </elements>

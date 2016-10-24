@@ -125,7 +125,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Properties" width="127" id="Auy-LE-9Dl"/>
+                        <barButtonItem title="Properties" width="85" id="Auy-LE-9Dl"/>
                         <barButtonItem title="Items" width="200" id="4nE-Dh-Rd9"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Add Property" id="c08-3N-y8q">
