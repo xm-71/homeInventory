@@ -10,4 +10,10 @@ import UIKit
 
 class AddPropertyViewController: UIViewController {
     
+    @IBOutlet weak var propertyName: UITextField!
+    @IBOutlet weak var streetAddress: UITextField!
+    @IBOutlet weak var city: UITextField!
+    @IBOutlet weak var state: UITextField!
+    @IBOutlet weak var zip: UITextField!
+    @IBOutlet weak var country: UITextField!
 }
