@@ -18,7 +18,6 @@ extension Room {
     @NSManaged var floor: String?
     @NSManaged var room_name: String?
     @NSManaged var updated_date: NSDate?
-    @NSManaged var id: NSNumber?
     @NSManaged var items: NSSet?
     @NSManaged var property: Property?
 

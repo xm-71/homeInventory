@@ -17,7 +17,6 @@ extension Category {
     @NSManaged var catergory_name: String?
     @NSManaged var created_date: NSDate?
     @NSManaged var updated_date: NSDate?
-    @NSManaged var id: NSNumber?
     @NSManaged var item: Item?
 
 }

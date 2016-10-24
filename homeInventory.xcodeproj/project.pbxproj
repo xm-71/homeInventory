@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11555DEF1DBE9EC000EC8732 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11555DEB1DBE9EC000EC8732 /* Item+CoreDataProperties.swift */; };
-		11555DF01DBE9EC000EC8732 /* Property+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11555DEC1DBE9EC000EC8732 /* Property+CoreDataProperties.swift */; };
-		11555DF11DBE9EC000EC8732 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11555DED1DBE9EC000EC8732 /* Category+CoreDataProperties.swift */; };
-		11555DF21DBE9EC000EC8732 /* Room+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11555DEE1DBE9EC000EC8732 /* Room+CoreDataProperties.swift */; };
+		11555DF71DBEA0FF00EC8732 /* Room+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11555DF31DBEA0FF00EC8732 /* Room+CoreDataProperties.swift */; };
+		11555DF81DBEA0FF00EC8732 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11555DF41DBEA0FF00EC8732 /* Category+CoreDataProperties.swift */; };
+		11555DF91DBEA0FF00EC8732 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11555DF51DBEA0FF00EC8732 /* Item+CoreDataProperties.swift */; };
+		11555DFA1DBEA0FF00EC8732 /* Property+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11555DF61DBEA0FF00EC8732 /* Property+CoreDataProperties.swift */; };
 		7319C5D81DA54B2B00B5B455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7319C5D71DA54B2B00B5B455 /* AppDelegate.swift */; };
 		7319C5DA1DA54B2B00B5B455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7319C5D91DA54B2B00B5B455 /* ViewController.swift */; };
 		7319C5DD1DA54B2C00B5B455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7319C5DB1DA54B2C00B5B455 /* Main.storyboard */; };
@@ -28,10 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		11555DEB1DBE9EC000EC8732 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11555DEC1DBE9EC000EC8732 /* Property+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Property+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11555DED1DBE9EC000EC8732 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		11555DEE1DBE9EC000EC8732 /* Room+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Room+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		11555DF31DBEA0FF00EC8732 /* Room+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Room+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		11555DF41DBEA0FF00EC8732 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		11555DF51DBEA0FF00EC8732 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		11555DF61DBEA0FF00EC8732 /* Property+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Property+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7319C5D41DA54B2B00B5B455 /* HomeInventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeInventory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7319C5D71DA54B2B00B5B455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7319C5D91DA54B2B00B5B455 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +64,10 @@
 		7319C5CB1DA54B2B00B5B455 = {
 			isa = PBXGroup;
 			children = (
+				11555DF31DBEA0FF00EC8732 /* Room+CoreDataProperties.swift */,
+				11555DF41DBEA0FF00EC8732 /* Category+CoreDataProperties.swift */,
+				11555DF51DBEA0FF00EC8732 /* Item+CoreDataProperties.swift */,
+				11555DF61DBEA0FF00EC8732 /* Property+CoreDataProperties.swift */,
 				7319C5D61DA54B2B00B5B455 /* HomeInventory */,
 				7319C5D51DA54B2B00B5B455 /* Products */,
 			);
@@ -80,10 +84,6 @@
 		7319C5D61DA54B2B00B5B455 /* HomeInventory */ = {
 			isa = PBXGroup;
 			children = (
-				11555DEB1DBE9EC000EC8732 /* Item+CoreDataProperties.swift */,
-				11555DEC1DBE9EC000EC8732 /* Property+CoreDataProperties.swift */,
-				11555DED1DBE9EC000EC8732 /* Category+CoreDataProperties.swift */,
-				11555DEE1DBE9EC000EC8732 /* Room+CoreDataProperties.swift */,
 				7319C5D71DA54B2B00B5B455 /* AppDelegate.swift */,
 				7319C5D91DA54B2B00B5B455 /* ViewController.swift */,
 				7319C5DB1DA54B2C00B5B455 /* Main.storyboard */,
@@ -174,20 +174,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11555DF91DBEA0FF00EC8732 /* Item+CoreDataProperties.swift in Sources */,
 				73E4A5661DB6B81D0065C00E /* CategoryTableViewController.swift in Sources */,
+				11555DFA1DBEA0FF00EC8732 /* Property+CoreDataProperties.swift in Sources */,
+				11555DF81DBEA0FF00EC8732 /* Category+CoreDataProperties.swift in Sources */,
 				73E4A5621DB6B7E50065C00E /* RoomTableViewController.swift in Sources */,
 				73E4A5601DB6B75E0065C00E /* PropertyTableViewController.swift in Sources */,
 				7319C5E01DA54B2C00B5B455 /* HomeInventory.xcdatamodeld in Sources */,
-				11555DF01DBE9EC000EC8732 /* Property+CoreDataProperties.swift in Sources */,
+				11555DF71DBEA0FF00EC8732 /* Room+CoreDataProperties.swift in Sources */,
 				7319C5DA1DA54B2B00B5B455 /* ViewController.swift in Sources */,
 				73E4A56C1DB6B8660065C00E /* AddItemViewController.swift in Sources */,
-				11555DF11DBE9EC000EC8732 /* Category+CoreDataProperties.swift in Sources */,
-				11555DEF1DBE9EC000EC8732 /* Item+CoreDataProperties.swift in Sources */,
 				73E4A5641DB6B7F70065C00E /* ItemTableViewController.swift in Sources */,
 				73E4A56A1DB6B84F0065C00E /* AddRoomViewController.swift in Sources */,
 				7319C5D81DA54B2B00B5B455 /* AppDelegate.swift in Sources */,
 				73E4A5681DB6B8360065C00E /* AddPropertyViewController.swift in Sources */,
-				11555DF21DBE9EC000EC8732 /* Room+CoreDataProperties.swift in Sources */,
 				73E4A56E1DB6B87A0065C00E /* AddCategoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

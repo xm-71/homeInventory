@@ -24,7 +24,6 @@ extension Property {
     @NSManaged var state: String?
     @NSManaged var street_address: String?
     @NSManaged var updated_date: NSDate?
-    @NSManaged var id: NSNumber?
     @NSManaged var room: NSSet?
 
 }

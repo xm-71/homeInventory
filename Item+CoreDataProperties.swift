@@ -14,10 +14,6 @@ import CoreData
 
 extension Item {
 
-    @NSManaged var attribute: UNKNOWN_TYPE
-    @NSManaged var attribute1: UNKNOWN_TYPE
-    @NSManaged var attribute2: UNKNOWN_TYPE
-    @NSManaged var attribute3: UNKNOWN_TYPE
     @NSManaged var created_date: NSDate?
     @NSManaged var item_image: NSDate?
     @NSManaged var item_name: String?
@@ -25,7 +21,6 @@ extension Item {
     @NSManaged var purchase_price: NSDecimalNumber?
     @NSManaged var serial_number: String?
     @NSManaged var updated_date: NSDate?
-    @NSManaged var id: NSNumber?
     @NSManaged var room: Room?
     @NSManaged var category: NSSet?
 
