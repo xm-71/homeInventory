@@ -14,10 +14,10 @@ import CoreData
 
 extension Room {
 
-    @NSManaged var created_date: NSDate?
+    @NSManaged var created_date: NSTimeInterval
     @NSManaged var floor: String?
     @NSManaged var room_name: String?
-    @NSManaged var updated_date: NSDate?
+    @NSManaged var updated_date: NSTimeInterval
     @NSManaged var items: NSSet?
     @NSManaged var property: Property?
 

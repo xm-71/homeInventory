@@ -14,14 +14,14 @@ import CoreData
 
 extension Item {
 
-    @NSManaged var created_date: NSDate?
-    @NSManaged var item_image: NSDate?
+    @NSManaged var created_date: NSTimeInterval
+    @NSManaged var item_image: NSTimeInterval
     @NSManaged var item_name: String?
-    @NSManaged var purchase_date: NSDate?
+    @NSManaged var purchase_date: NSTimeInterval
     @NSManaged var purchase_price: NSDecimalNumber?
     @NSManaged var serial_number: String?
-    @NSManaged var updated_date: NSDate?
-    @NSManaged var room: Room?
+    @NSManaged var updated_date: NSTimeInterval
     @NSManaged var category: NSSet?
+    @NSManaged var room: Room?
 
 }

@@ -21,7 +21,7 @@ extension Item {
     @NSManaged var purchase_price: NSDecimalNumber?
     @NSManaged var serial_number: String?
     @NSManaged var updated_date: NSDate?
-    @NSManaged var room: Room?
     @NSManaged var category: NSSet?
+    @NSManaged var room: Room?
 
 }

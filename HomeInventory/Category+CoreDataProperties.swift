@@ -15,8 +15,8 @@ import CoreData
 extension Category {
 
     @NSManaged var catergory_name: String?
-    @NSManaged var created_date: NSDate?
-    @NSManaged var updated_date: NSDate?
+    @NSManaged var created_date: NSTimeInterval
+    @NSManaged var updated_date: NSTimeInterval
     @NSManaged var item: Item?
 
 }

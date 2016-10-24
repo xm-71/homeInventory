@@ -16,14 +16,14 @@ extension Property {
 
     @NSManaged var city: String?
     @NSManaged var country: String?
-    @NSManaged var created_date: NSDate?
-    @NSManaged var latitude: NSNumber?
-    @NSManaged var longitude: NSNumber?
+    @NSManaged var created_date: NSTimeInterval
+    @NSManaged var latitude: Double
+    @NSManaged var longitude: Double
     @NSManaged var postal_code: String?
     @NSManaged var property_name: String?
     @NSManaged var state: String?
     @NSManaged var street_address: String?
-    @NSManaged var updated_date: NSDate?
+    @NSManaged var updated_date: NSTimeInterval
     @NSManaged var room: NSSet?
 
 }
