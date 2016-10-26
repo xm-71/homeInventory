@@ -10,6 +10,10 @@ import UIKit
 
 class PropertyTableViewController: UITableViewController {
     
+    override func viewDidAppear(animated: Bool) {
+        tableView.reloadData()
+    }
+    
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
