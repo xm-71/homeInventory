@@ -35,4 +35,21 @@ class PropertyTableViewController: UITableViewController {
         return cell
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue == "segueRoomTVC"{
+        
+        
+        if let row = tableView.indexPathForSelectedRow?.row {
+        
+        let tappedProperty = Property.getAllProperties()[row]
+            
+            let roomTVC = segue.destinationViewController as! RoomTableViewController
+            
+            roomTVC.selectedProperty = tappedProperty
+            }
+        
+        }
+    }
+    
 }

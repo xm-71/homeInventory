@@ -10,4 +10,10 @@ import UIKit
 
 class RoomTableViewController: UITableViewController {
     
+    var selectedProperty: Property!
+    
+    override func viewDidAppear(animated: Bool) {
+        print(selectedProperty.property_name)
+    }
+    
 }
