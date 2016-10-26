@@ -141,12 +141,10 @@
                         <barButtonItem title="Items" width="200" id="LRk-9H-Ejv"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Add Property" id="c08-3N-y8q">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="hBC-k4-2Bw">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gsh-e8-6RP">
-                                <rect key="frame" x="171" y="7" width="133" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Save"/>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="XcB-qD-Yb8">
+                            <connections>
+                                <action selector="btnSaveProperty:" destination="ooh-7T-waz" id="1Om-ne-fHF"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -215,13 +213,7 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Add Room" id="79B-oo-VAT">
                         <barButtonItem key="backBarButtonItem" title="Back" id="ssj-fR-9TQ"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="Po7-kY-dvo">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hNh-co-Gv2">
-                                <rect key="frame" x="233" y="7" width="71" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Save"/>
-                            </button>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="cj3-lj-Gya"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

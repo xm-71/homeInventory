@@ -41,6 +41,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Property.addProperty("s")
             print("added items to core data")
         }
+        
+    
+        if let documentsPath = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first?.path {
+            print(documentsPath)
+        }
         return true
     }
 

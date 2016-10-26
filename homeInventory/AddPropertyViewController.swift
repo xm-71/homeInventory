@@ -10,6 +10,11 @@ import UIKit
 
 class AddPropertyViewController: UIViewController {
     
+    @IBAction func btnSaveProperty(sender: AnyObject) {
+        
+        Property.addProperty(txtPropertyName.text!)
+    }
+    
     @IBOutlet weak var txtPropertyName: UITextField!
     @IBOutlet weak var txtStreetAddress: UITextField!
     @IBOutlet weak var txtCity: UITextField!

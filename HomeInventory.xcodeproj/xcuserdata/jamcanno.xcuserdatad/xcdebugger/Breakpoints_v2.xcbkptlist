@@ -51,5 +51,83 @@
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HomeInventory/AddPropertyViewController.swift"
+            timestampString = "499209099.664806"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "btnSaveProperty(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeInventory.AddPropertyViewController.txtCity.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "HomeInventory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamcanno/Desktop/homeInventory/HomeInventory/AddPropertyViewController.swift"
+                  timestampString = "499209099.690401"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeInventory.AddPropertyViewController.txtCity.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "HomeInventory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamcanno/Desktop/homeInventory/HomeInventory/AddPropertyViewController.swift"
+                  timestampString = "499209099.695384"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeInventory.AddPropertyViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; HomeInventory.AddPropertyViewController"
+                  moduleName = "HomeInventory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamcanno/Desktop/homeInventory/HomeInventory/AddPropertyViewController.swift"
+                  timestampString = "499209099.695506"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeInventory.AddPropertyViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;HomeInventory.AddPropertyViewController&gt;"
+                  moduleName = "HomeInventory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamcanno/Desktop/homeInventory/HomeInventory/AddPropertyViewController.swift"
+                  timestampString = "499209099.695593"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "138">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
