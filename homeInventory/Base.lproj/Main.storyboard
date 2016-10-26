@@ -149,12 +149,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="city" destination="hvA-km-gpE" id="Kgz-3o-yqJ"/>
-                        <outlet property="country" destination="ijM-6W-CZC" id="5aQ-Sh-3EB"/>
-                        <outlet property="propertyName" destination="vtr-jc-nCW" id="gU1-zc-9Yq"/>
-                        <outlet property="state" destination="FwF-x4-EiM" id="Ktd-RT-ePB"/>
-                        <outlet property="streetAddress" destination="YCe-t2-Ygs" id="kpX-TC-W6E"/>
-                        <outlet property="zip" destination="yPQ-OZ-Zwd" id="y3G-Rd-l27"/>
+                        <outlet property="txtPropertyName" destination="vtr-jc-nCW" id="dFJ-Du-KmA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sfQ-FC-m9T" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -216,10 +211,6 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="cj3-lj-Gya"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="floor" destination="EVp-Q9-wxT" id="Iyh-Ek-2Lg"/>
-                        <outlet property="roomName" destination="14W-n9-2A9" id="sqj-Em-dou"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oaI-xQ-4l8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

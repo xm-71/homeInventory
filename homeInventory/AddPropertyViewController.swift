@@ -13,12 +13,9 @@ class AddPropertyViewController: UIViewController {
     @IBAction func btnSaveProperty(sender: AnyObject) {
         
         Property.addProperty(txtPropertyName.text!)
+        navigationController?.popViewControllerAnimated(true)
     }
     
     @IBOutlet weak var txtPropertyName: UITextField!
-    @IBOutlet weak var txtStreetAddress: UITextField!
-    @IBOutlet weak var txtCity: UITextField!
-    @IBOutlet weak var txtState: UITextField!
-    @IBOutlet weak var txtZip: UITextField!
-    @IBOutlet weak var txtCountry: UITextField!
+   
 }
