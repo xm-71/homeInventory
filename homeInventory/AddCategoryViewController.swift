@@ -10,4 +10,13 @@ import UIKit
 
 class AddCategoryViewController: UIViewController {
     
+    
+    @IBOutlet weak var txtCategoryName: UITextField!
+    
+    @IBAction func btnSaveCategory(sender: AnyObject) {
+        Category.addCategory(txtCategoryName.text!)
+        navigationController?.popViewControllerAnimated(true)
+    }
+   
+    
 }
