@@ -42,7 +42,7 @@ class PropertyTableViewController: UITableViewController {
         
         if let row = tableView.indexPathForSelectedRow?.row {
         
-        let tappedProperty = Property.getAllProperties()[row]
+        let tappedProperty = Property.getAllProperties()[row] as! Property
             
             let roomTVC = segue.destinationViewController as! RoomTableViewController
             
