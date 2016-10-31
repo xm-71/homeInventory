@@ -31,7 +31,7 @@ class Room: NSManagedObject {
         
         // STEP 2:
         // CREATE A FETCH REQUEST FOR A SPECIFIC ENTITY
-        let fetchRequest = NSFetchRequest(entityName: "room")
+        let fetchRequest = NSFetchRequest(entityName: "Room")
         
         
         // STEP 3:
@@ -58,7 +58,7 @@ class Room: NSManagedObject {
     
     // ADD A NEW PROPERTY
     
-    static func addRoom(roomName: String) {
+    static func addRoom(room_name: String) {
         
         // STEP 1a:
         // REFERENCE TO THE APP DELEGATE
@@ -81,7 +81,7 @@ class Room: NSManagedObject {
         
         // STEP 4:
         // ADD VALUES TO THE INSTANCE'S ATTRIBUTES
-        newRoom.setValue(roomName, forKey: "roomName")
+        newRoom.setValue(room_name, forKey: "room_name")
         
         
         // STEP 5:

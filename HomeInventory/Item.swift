@@ -57,7 +57,7 @@ class Item: NSManagedObject {
     
     // ADD A NEW PROPERTY
     
-    static func addItem(itemName: String) {
+    static func addItem(item_name: String) {
         
         // STEP 1a:
         // REFERENCE TO THE APP DELEGATE
@@ -80,7 +80,7 @@ class Item: NSManagedObject {
         
         // STEP 4:
         // ADD VALUES TO THE INSTANCE'S ATTRIBUTES
-        newItem.setValue(itemName, forKey: "itemName")
+        newItem.setValue(item_name, forKey: "item_name")
         
         
         // STEP 5:

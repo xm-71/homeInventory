@@ -10,6 +10,7 @@ import UIKit
 
 class AddItemViewController: UIViewController {
     
+   
     @IBOutlet weak var txtItemName: UITextField!
     
     @IBOutlet weak var txtSerialNumber: UITextField!

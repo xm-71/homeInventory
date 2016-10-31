@@ -37,7 +37,7 @@ class PropertyTableViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue == "segueRoomTVC"{
+        if segue.identifier == "segueRoomTVC"{
         
         
         if let row = tableView.indexPathForSelectedRow?.row {

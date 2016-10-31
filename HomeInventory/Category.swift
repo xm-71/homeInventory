@@ -30,7 +30,7 @@ class Category: NSManagedObject {
         
         // STEP 2:
         // CREATE A FETCH REQUEST FOR A SPECIFIC ENTITY
-        let fetchRequest = NSFetchRequest(entityName: "Item")
+        let fetchRequest = NSFetchRequest(entityName: "Category")
         
         
         // STEP 3:
@@ -57,7 +57,7 @@ class Category: NSManagedObject {
     
     // ADD A NEW PROPERTY
     
-    static func addCategory(categoryName: String) {
+    static func addCategory(catergory_name: String) {
         
         // STEP 1a:
         // REFERENCE TO THE APP DELEGATE
@@ -80,7 +80,8 @@ class Category: NSManagedObject {
         
         // STEP 4:
         // ADD VALUES TO THE INSTANCE'S ATTRIBUTES
-        newCategory.setValue(categoryName, forKey: "categoryName")
+        newCategory.setValue(catergory_name, forKey: "catergory_name")
+        
         
         
         // STEP 5:
