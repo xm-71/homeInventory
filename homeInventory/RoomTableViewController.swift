@@ -20,7 +20,7 @@ class RoomTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return Room.getAllRooms().count
+        return Room.getAllRoomsForProperty(selectedProperty).count
         
         
     }
@@ -31,7 +31,7 @@ class RoomTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("roomCell", forIndexPath: indexPath)
         
-        let thisRoom = Room.getAllRooms()[indexPath.row] as! Room
+        let thisRoom = Room.getAllRoomsForProperty(selectedProperty)[indexPath.row] as! Room
         
         cell.textLabel?.text = thisRoom.room_name
         
@@ -40,20 +40,29 @@ class RoomTableViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier == "segueRoomViewTVC"{
+        if segue.identifier == "segueAddRoomViewTVC"{
             
+           let addRoomTVC = segue.destinationViewController as! AddRoomViewController
             
-            if let row = tableView.indexPathForSelectedRow?.row {
+            addRoomTVC.selectedProperty = selectedProperty
+            }
+            
+            else if segue.identifier == "segueItemTVC"{
+            
+                if let row = tableView.indexPathForSelectedRow?.row {
+                    
+                    let tappedRoom = Room.getAllRoomsForProperty(selectedProperty)[row] as! Room
+                    
+                    let roomViewTVC = segue.destinationViewController as! RoomTableViewController
+                    
+                    roomViewTVC.selectedRoom = tappedRoom
                 
-                let tappedRoom = Room.getAllRooms()[row] as! Room
-                
-                let roomViewTVC = segue.destinationViewController as! RoomTableViewController
-                
-                roomViewTVC.selectedRoom = tappedRoom
+                }
+            
             }
             
         }
     }
     
-}
-    
+
+

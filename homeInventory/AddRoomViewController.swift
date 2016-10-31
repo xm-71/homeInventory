@@ -10,9 +10,11 @@ import UIKit
 
 class AddRoomViewController: UIViewController {
     
+    var selectedProperty: Property!
+    
     @IBAction func btnSaveRoom(sender: AnyObject) {
-        Room.addRoom(txtRoomName.text!)
-        Room.addRoom(txtFloorName.text!)
+        Room.addRoom(txtRoomName.text!, selectedProperty: selectedProperty)
+        
         navigationController?.popViewControllerAnimated(true)
         
     }
