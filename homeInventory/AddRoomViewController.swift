@@ -10,6 +10,20 @@ import UIKit
 
 class AddRoomViewController: UIViewController {
     
+    @IBAction func btnSaveRoom(sender: AnyObject) {
+        Room.addRoom(txtRoomName.text!)
+        Room.addRoom(txtFloorName.text!)
+        navigationController?.popViewControllerAnimated(true)
+        
+    }
+    
     @IBOutlet weak var txtRoomName: UITextField!
-    @IBOutlet weak var txtFloor: UITextField!
+   
+    @IBOutlet weak var txtFloorName: UITextField!
+
+    
 }
+
+   
+    
+    

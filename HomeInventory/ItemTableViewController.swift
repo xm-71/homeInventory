@@ -10,4 +10,10 @@ import UIKit
 
 class ItemTableViewController: UITableViewController {
     
+    var selectedItem: Item!
+    
+    override func viewDidAppear(animated: Bool) {
+        print(selectedItem.property_name)
+    }
+
 }

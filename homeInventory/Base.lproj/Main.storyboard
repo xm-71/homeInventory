@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Yen-bE-Dz8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Yen-bE-Dz8">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -120,7 +120,7 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ijM-6W-CZC">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ijM-6W-CZC">
                                         <rect key="frame" x="0.0" y="231" width="288" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -188,7 +188,7 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EVp-Q9-wxT">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EVp-Q9-wxT">
                                         <rect key="frame" x="0.0" y="63" width="288" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -208,9 +208,18 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Add Room" id="79B-oo-VAT">
                         <barButtonItem key="backBarButtonItem" title="Back" id="ssj-fR-9TQ"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="cj3-lj-Gya"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="cj3-lj-Gya">
+                            <connections>
+                                <action selector="btnSaveRoom:" destination="C3g-6Z-geE" id="IFt-d3-d33"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="btnSave" destination="79B-oo-VAT" id="PpC-Xt-t8B"/>
+                        <outlet property="txtFloorName" destination="EVp-Q9-wxT" id="mcH-4Y-8OS"/>
+                        <outlet property="txtRoomName" destination="14W-n9-2A9" id="yCq-V7-9Qs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oaI-xQ-4l8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -382,22 +391,21 @@
                     <toolbarItems>
                         <barButtonItem title="Properties" width="118" id="1Ca-wI-Ow3"/>
                         <barButtonItem title="Items" width="200" id="Nue-eK-abx"/>
+                        <barButtonItem title="Item" id="yvc-NX-FEy"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Add Item" id="Uwx-Ze-hui">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="J5L-lE-eqP">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4wc-AO-ika">
-                                <rect key="frame" x="233" y="7" width="71" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Save"/>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="xje-15-Nfs">
+                            <connections>
+                                <action selector="btnSaveItem:" destination="NAA-AK-CHZ" id="VuE-s7-Hm3"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="itemName" destination="Ci5-8v-AmI" id="VEU-ar-0HE"/>
-                        <outlet property="purchaseDate" destination="K5X-hP-CdT" id="oyJ-E6-b30"/>
-                        <outlet property="purchasePrice" destination="ywy-MW-zvM" id="ajN-7E-vAF"/>
-                        <outlet property="serialNumber" destination="Icg-Oa-nZd" id="56B-zz-Led"/>
+                        <outlet property="txtItemName" destination="Ci5-8v-AmI" id="dp8-E4-4vc"/>
+                        <outlet property="txtPurchaseDate" destination="K5X-hP-CdT" id="DeR-cc-vAd"/>
+                        <outlet property="txtPurchasePrice" destination="ywy-MW-zvM" id="wyp-n3-wAM"/>
+                        <outlet property="txtSerialNumber" destination="Icg-Oa-nZd" id="7hh-QU-jz5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qjT-5W-sTs" userLabel="First Responder" sceneMemberID="firstResponder"/>
