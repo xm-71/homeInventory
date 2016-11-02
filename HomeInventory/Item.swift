@@ -12,6 +12,9 @@ import CoreData
 
 class Item: NSManagedObject {
     
+    var selectedRoom: Room!
+    
+    var selectedCategory: Category!
     
     // Insert code here to add functionality to your managed object subclass
     
@@ -54,10 +57,47 @@ class Item: NSManagedObject {
         
     }
     
+    static func getAllItems() -> [NSManagedObject] {
+        
+        // STEP 1a:
+        // REFERENCE TO THE APP DELEGATE
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        // STEP 1b:
+        // REFERENCE TO THE MANAGED OBJECT CONTEXT
+        let managedContext = appDelegate.managedObjectContext
+        
+        
+        // STEP 2:
+        // CREATE A FETCH REQUEST FOR A SPECIFIC ENTITY
+        let fetchRequest = NSFetchRequest(entityName: "Item")
+        
+        
+        // STEP 3:
+        // CREATE A COLLECTION OF NSMANAGEDOBJECTS (PROPERTIES)
+        var allItems = [NSManagedObject]()
+        
+        
+        // STEP 4:
+        // EXECUTE THE FETCH REQUEST
+        do {
+            let results = try managedContext.executeFetchRequest(fetchRequest)
+            allItems = results as! [NSManagedObject]
+        } catch let error as NSError {
+            print("Could not fetch properties \(error), \(error.userInfo)")
+        }
+        
+        
+        // STEP 5:PROPERTIES
+        
+        return allItems
+        
+    }
+    
     
     // ADD A NEW PROPERTY
     
-    static func addItem(item_name: String) {
+    static func addItem(item_name: String, selectedRoom: Room, selectedCategory: Category) {
         
         // STEP 1a:
         // REFERENCE TO THE APP DELEGATE
@@ -81,6 +121,8 @@ class Item: NSManagedObject {
         // STEP 4:
         // ADD VALUES TO THE INSTANCE'S ATTRIBUTES
         newItem.setValue(item_name, forKey: "item_name")
+        newItem.setValue(selectedRoom, forKey: "room")
+        newItem.setValue(selectedCategory, forKey: "category")
         
         
         // STEP 5:

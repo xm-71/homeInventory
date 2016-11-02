@@ -12,6 +12,8 @@ class AddItemViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     var selectedRoom: Room!
     
+    var selectedCategory: Category!
+    
     
     @IBOutlet weak var txtItemName: UITextField!
     
@@ -24,7 +26,7 @@ class AddItemViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var txtCategory: UITextField!
     
     @IBAction func btnSaveItem(sender: AnyObject) {
-        Item.addItem(txtItemName.text!)
+        Item.addItem(txtItemName.text!, selectedRoom: selectedRoom, selectedCategory: selectedCategory)
         Item.addItem(txtSerialNumber.text!)
         Item.addItem(txtPurchaseDate.text!)
         Item.addItem(txtPurchasePrice.text!)
@@ -66,6 +68,8 @@ class AddItemViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         let thisCategory = Category.getAllCategories()[row] as! Category
         
         txtCategory.text = thisCategory.catergory_name
+        
+        selectedCategory = thisCategory
         
     }
     

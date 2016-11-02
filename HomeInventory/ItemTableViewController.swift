@@ -36,6 +36,8 @@ class ItemTableViewController: UITableViewController {
         
         cell.textLabel?.text = thisItem.item_name
         
+        cell.detailTextLabel?.text = thisItem.Category?.ca
+        
         return cell
     }
     
