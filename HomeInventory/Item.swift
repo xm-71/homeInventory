@@ -12,13 +12,9 @@ import CoreData
 
 class Item: NSManagedObject {
     
-    var selectedRoom: Room!
-    
-    var selectedCategory: Category!
-    
     // Insert code here to add functionality to your managed object subclass
     
-    // GET ALL PROPERTIES
+    // GET ALL ITEMS
     
     static func getAllItems() -> [NSManagedObject] {
         
@@ -47,17 +43,17 @@ class Item: NSManagedObject {
             let results = try managedContext.executeFetchRequest(fetchRequest)
             allItems = results as! [NSManagedObject]
         } catch let error as NSError {
-            print("Could not fetch properties \(error), \(error.userInfo)")
+            print("Could not fetch items \(error), \(error.userInfo)")
         }
         
         
-        // STEP 5:PROPERTIES
+        // STEP 5: RETURN THE ARRAY
         
         return allItems
         
     }
     
-    static func getAllItems() -> [NSManagedObject] {
+    static func getAllItemsForRoom(selectedRoom: Room) -> [NSManagedObject] {
         
         // STEP 1a:
         // REFERENCE TO THE APP DELEGATE
@@ -74,30 +70,37 @@ class Item: NSManagedObject {
         
         
         // STEP 3:
-        // CREATE A COLLECTION OF NSMANAGEDOBJECTS (PROPERTIES)
+        // CREATE A COLLECTION OF NSMANAGEDOBJECTS
         var allItems = [NSManagedObject]()
         
         
         // STEP 4:
+        // ADD AN NSPREDICATE
+        let predicate = NSPredicate(format: "room == %@", selectedRoom)
+        
+        fetchRequest.predicate = predicate
+        
+        
+        // STEP 5:
         // EXECUTE THE FETCH REQUEST
         do {
             let results = try managedContext.executeFetchRequest(fetchRequest)
             allItems = results as! [NSManagedObject]
         } catch let error as NSError {
-            print("Could not fetch properties \(error), \(error.userInfo)")
+            print("Could not fetch items \(error), \(error.userInfo)")
         }
         
         
-        // STEP 5:PROPERTIES
+        // STEP 6: RETURN THE ARRAY
         
         return allItems
         
     }
     
     
-    // ADD A NEW PROPERTY
+    // ADD A NEW ITEM
     
-    static func addItem(item_name: String, selectedRoom: Room, selectedCategory: Category) {
+     static func addItem(itemName: String, selectedRoom: Room, selectedCategory: Category) {
         
         // STEP 1a:
         // REFERENCE TO THE APP DELEGATE
@@ -120,7 +123,7 @@ class Item: NSManagedObject {
         
         // STEP 4:
         // ADD VALUES TO THE INSTANCE'S ATTRIBUTES
-        newItem.setValue(item_name, forKey: "item_name")
+        newItem.setValue(itemName, forKey: "itemName")
         newItem.setValue(selectedRoom, forKey: "room")
         newItem.setValue(selectedCategory, forKey: "category")
         
@@ -133,16 +136,10 @@ class Item: NSManagedObject {
             
         } catch let error as NSError {
             
-            print("Could not save new Item: \(error), \(error.userInfo)")
+            print("Could not save new item: \(error), \(error.userInfo)")
             
         }
         
     }
     
-    
 }
-
-
-
-
-

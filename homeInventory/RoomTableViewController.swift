@@ -53,9 +53,9 @@ class RoomTableViewController: UITableViewController {
                     
                     let tappedRoom = Room.getAllRoomsForProperty(selectedProperty)[row] as! Room
                     
-                    let roomViewTVC = segue.destinationViewController as! RoomTableViewController
+                    let itemTVC = segue.destinationViewController as! ItemTableViewController
                     
-                    roomViewTVC.selectedRoom = tappedRoom
+                    itemTVC.selectedRoom = tappedRoom
                 
                 }
             

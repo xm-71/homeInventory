@@ -16,31 +16,42 @@ class CategoryTableViewController: UITableViewController {
     var selectedItem: Item!
     var selectedCategory: Category!
     
-    override func viewDidAppear(animated: Bool) {
-        tableView.reloadData()
-    }
-    
-    
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    class CategoryTableViewController: UITableViewController {
         
-        return Category.getAllCategories().count
+        override func viewWillAppear(animated: Bool) {
+            tableView.reloadData()
+        }
         
         
-    }
-    
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier("catergoryCell", forIndexPath: indexPath)
-        
-        let thisCategory = Category.getAllCategories()[indexPath.row] as! Category
-        
-        cell.textLabel?.text = thisCategory.catergory_name
-        
-        return cell
-    }
-    
-  
+        override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            
+            return Category.getAllCategories().count
             
         }
+        
+        override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+            
+            // WILL EXECUTE once FOR EACH TABLE CELL ON THE DISPLAY
+            
+            
+            
+            // Create or grab a reusable table cell
+            let cell = tableView.dequeueReusableCellWithIdentifier("categoryCell", forIndexPath: indexPath)
+            
+            
+            
+            // Get an instance of Category for the correct location in the table
+            let thisCategory = Category.getAllCategories()[indexPath.row] as! Category
+            
+            cell.textLabel?.text = thisCategory.catergory_name
+            
+            
+            return cell
+            
+        }
+        
+
+    }
+
+
+}

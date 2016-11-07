@@ -17,6 +17,6 @@ extension Category {
     @NSManaged var catergory_name: String?
     @NSManaged var created_date: NSTimeInterval
     @NSManaged var updated_date: NSTimeInterval
-    @NSManaged var item: Item?
+    @NSManaged var item: NSSet?
 
 }

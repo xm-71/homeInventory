@@ -27,9 +27,7 @@ class AddItemViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     @IBAction func btnSaveItem(sender: AnyObject) {
         Item.addItem(txtItemName.text!, selectedRoom: selectedRoom, selectedCategory: selectedCategory)
-        Item.addItem(txtSerialNumber.text!)
-        Item.addItem(txtPurchaseDate.text!)
-        Item.addItem(txtPurchasePrice.text!)
+  
         
         
         navigationController?.popViewControllerAnimated(true)

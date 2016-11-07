@@ -21,7 +21,7 @@ class ItemTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return Item.getAllItems().count
+        return Item.getAllItemsForRoom(selectedRoom).count
         
         
     }
@@ -32,30 +32,29 @@ class ItemTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("itemCell", forIndexPath: indexPath)
         
-        let thisItem = Item.getAllItems()[indexPath.row] as! Item
+        let thisItem = Item.getAllItemsForRoom(selectedRoom)[indexPath.row] as! Item
         
         cell.textLabel?.text = thisItem.item_name
         
-        cell.detailTextLabel?.text = thisItem.Category?.ca
+        cell.detailTextLabel?.text = thisItem.category?.catergory_name
         
         return cell
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier == "segueItemTVC"{
+        if segue.identifier == "segueAddItemVC" {
             
+            // FIGURE OUT THE DESTINATION VIEW CONTROLLER
+            let addItemVC = segue.destinationViewController as! AddItemViewController
             
-            if let row = tableView.indexPathForSelectedRow?.row {
-                
-                let tappedItem = Item.getAllItems()[row] as! Item
-                
-                let ItemTVC = segue.destinationViewController as! ItemTableViewController
-                
-                ItemTVC.selectedItem = tappedItem
+            // PASS THE OBJECT FOR THAT ROW TO THE DESTINATION VIEW CONTROLLER
+            addItemVC.selectedRoom = selectedRoom
             }
             
         }
     }
 
-}
+
+
+
