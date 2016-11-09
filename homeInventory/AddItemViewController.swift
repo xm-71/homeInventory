@@ -14,6 +14,8 @@ class AddItemViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     var selectedCategory: Category!
     
+    var purchaseDate: NSDate!
+    
     
     @IBOutlet weak var txtItemName: UITextField!
     
@@ -21,14 +23,64 @@ class AddItemViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     @IBOutlet weak var txtPurchasePrice: UITextField!
     
+   
     @IBOutlet weak var txtPurchaseDate: UITextField!
     
+    @IBAction func txtFieldEditing(sender: UITextField) {
+        
+        
+        let datePickerView: UIDatePicker = UIDatePicker()
+        
+        datePickerView.datePickerMode = UIDatePickerMode.Date
+        
+        if purchaseDate == purchaseDate {
+        
+        datePickerView.date = purchaseDate
+        
+        }
+        
+        sender.inputView = datePickerView
+        
+        datePickerView.addTarget(self, action: #selector(datePickerValueChanged), forControlEvents: UIControlEvents.ValueChanged)
+        
+        
+        
+    }
+    
+    func datePickerValueChanged(sender: UIDatePicker){
+    
+        let dateFormatter = NSDateFormatter()
+        
+        dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
+        
+        dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
+        
+        txtPurchaseDate.text = dateFormatter.stringFromDate(sender.date)
+        
+        
+        purchaseDate = sender.date
+    
+    
+    }
+    
+    
+    
+    
+    
+
     @IBOutlet weak var txtCategory: UITextField!
     
     @IBAction func btnSaveItem(sender: AnyObject) {
-        Item.addItem(txtItemName.text!, selectedRoom: selectedRoom, selectedCategory: selectedCategory)
+       
   
+        let formatter = NSNumberFormatter()
         
+        formatter.generatesDecimalNumbers = true
+        
+        
+        let purchasePrice = formatter.numberFromString(txtPurchasePrice.text!) as! NSDecimalNumber
+
+        Item.addItem(txtItemName.text!, selectedRoom: selectedRoom, selectedCategory: selectedCategory, purchaseDate: purchaseDate, purchasePrice: purchasePrice)
         
         navigationController?.popViewControllerAnimated(true)
         

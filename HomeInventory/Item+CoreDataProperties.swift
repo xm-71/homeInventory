@@ -17,7 +17,7 @@ extension Item {
     @NSManaged var created_date: NSTimeInterval
     @NSManaged var item_image: NSTimeInterval
     @NSManaged var item_name: String?
-    @NSManaged var purchase_date: NSTimeInterval
+    @NSManaged var purchase_date: NSDate?
     @NSManaged var purchase_price: NSDecimalNumber?
     @NSManaged var serial_number: String?
     @NSManaged var updated_date: NSTimeInterval

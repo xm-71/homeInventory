@@ -100,7 +100,7 @@ class Item: NSManagedObject {
     
     // ADD A NEW ITEM
     
-     static func addItem(itemName: String, selectedRoom: Room, selectedCategory: Category) {
+    static func addItem(itemName: String, selectedRoom: Room, selectedCategory: Category, purchaseDate: NSDate, purchasePrice: NSDecimalNumber) {
         
         // STEP 1a:
         // REFERENCE TO THE APP DELEGATE
@@ -126,6 +126,8 @@ class Item: NSManagedObject {
         newItem.setValue(itemName, forKey: "itemName")
         newItem.setValue(selectedRoom, forKey: "room")
         newItem.setValue(selectedCategory, forKey: "category")
+        newItem.setValue(purchaseDate, forKey: "purchaseDate")
+        newItem.setValue(purchasePrice, forKey: "purchasePrice")
         
         
         // STEP 5:
